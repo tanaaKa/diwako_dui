@@ -64,6 +64,8 @@ if (diwako_dui_enable_compass) then {
         if (diwako_dui_use_layout_editor) then {
             _ctrlMiddleX = profileNamespace getVariable ["igui_diwako_dui_compass_x", _ctrlMiddleX];
             _compassY = profileNamespace getVariable ["igui_diwako_dui_compass_y", _compassY];
+            _ctrlWidth = profileNamespace getVariable ["igui_diwako_dui_compass_w", _ctrlWidth];
+            _ctrlHeight = profileNamespace getVariable ["igui_diwako_dui_compass_h", _ctrlHeight];
         };
 
         diwako_dui_bearing_size_calc = diwako_dui_dir_size * diwako_dui_a3UiScale * diwako_dui_hudScaling * diwako_dui_windowHeightMod;
@@ -126,16 +128,20 @@ if (diwako_dui_setNamelist) then {
     diwako_dui_setNamelist = false;
     private _xPos = 0.5 + (pixelW * (_uiPixels / 2 + 10));
     private _yPos = safeZoneY + safeZoneH - (pixelH * (_uiPixels + 10));
+    private _wPos = 0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10));
+    private _hPos = pixelH * (_uiPixels + 10);
     if (diwako_dui_use_layout_editor) then {
         _xPos = profileNamespace getVariable ["igui_diwako_dui_namelist_x", _xPos];
         _yPos = profileNamespace getVariable ["igui_diwako_dui_namelist_y", _yPos];
+        _hPos = profileNamespace getVariable ["igui_diwako_dui_namelist_h", _hPos];
+        _wPos = profileNamespace getVariable ["igui_diwako_dui_namelist_w", _wPos];
     };
     private _nameList = _display displayCtrl IDC_NAMEBOX;
     private _nameListPos = [
         _xPos,
         _yPos,
-        0.5 * safeZoneW - (pixelW * (_uiPixels / 2 + 10)),
-        pixelH * (_uiPixels + 10)
+        _wPos,
+        _hPos
     ];
     _grpCtrl ctrlSetPosition _nameListPos;
     _grpCtrl ctrlCommit 0;

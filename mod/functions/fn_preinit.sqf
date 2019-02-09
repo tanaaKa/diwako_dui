@@ -411,12 +411,12 @@ private _curCat = localize "STR_dui_cat_layout";
             ["diwako_dui_reset_ui_pos", false, 0, "mission", true] call CBA_settings_fnc_set;
             ["diwako_dui_reset_ui_pos", false, 0, "client", true] call CBA_settings_fnc_set;
             profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
-            profileNamespace setVariable ["igui_diwako_dui_compass_x", 0.5 - (pixelW * (diwako_dui_uiPixels / 2))];
-            profileNamespace setVariable ["igui_diwako_dui_compass_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_compass_x", nil];
+            profileNamespace setVariable ["igui_diwako_dui_compass_y", nil];
             profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
             profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
-            profileNamespace setVariable ["igui_diwako_dui_namelist_x", 0.5 + (pixelW * (diwako_dui_uiPixels / 2 + 10))];
-            profileNamespace setVariable ["igui_diwako_dui_namelist_y", safeZoneY + safeZoneH - (pixelH * (diwako_dui_uiPixels + 10))];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_x", nil];
+            profileNamespace setVariable ["igui_diwako_dui_namelist_y", nil];
             profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
             saveProfileNamespace;
 
