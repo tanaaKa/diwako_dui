@@ -219,7 +219,7 @@ private _curCat = localize "STR_dui_cat_compass";
     ,"SLIDER"
     ,[localize "STR_dui_compass_icon_scale", localize "STR_dui_compass_icon_scale_desc"]
     ,[CBA_SETTINGS_CAT, _curCat]
-    ,[0.01, 4, 1, 2]
+    ,[0.01, 5, 1, 2]
     ,false
 ] call CBA_Settings_fnc_init;
 
