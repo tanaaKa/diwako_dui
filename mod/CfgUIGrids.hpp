@@ -10,8 +10,8 @@ class CfgUIGrids {
                             "0.5 * safeZoneW - (pixelW * (128 / 2 + 10))",
                             "pixelH * (128 + 10)"
                         },
-                        "0.5*(((safezoneW / safezoneH) min 1.2)/ 40)",
-                        "0.5*((((safezoneW / safezoneH) min 1.2)/ 1.2)/ 25)"
+                        "(((safezoneW / safezoneH) min 1.2) / 40)",
+                        "((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)"
                     };
                     diwako_dui_compass[] = {
                         {
@@ -20,8 +20,8 @@ class CfgUIGrids {
                             "pixelW * 128",
                             "pixelH * 128"
                         },
-                        "0.5*(((safezoneW / safezoneH) min 1.2)/ 40)",
-                        "0.5*((((safezoneW / safezoneH) min 1.2)/ 1.2)/ 25)"
+                        "(((safezoneW / safezoneH) min 1.2) / 40)",
+                        "((((safezoneW / safezoneH) min 1.2) / 1.2) / 25)"
                     };
                 };
             };

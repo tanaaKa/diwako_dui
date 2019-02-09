@@ -369,12 +369,6 @@ private _curCat = localize "STR_dui_cat_namelist";
         for "_i" from 0 to (count diwako_dui_namebox_lists) do {
             ctrlDelete ctrlParentControlsGroup (diwako_dui_namebox_lists deleteAt 0);
         };
-
-        // reset size for arma ui editor
-        profileNamespace setVariable ["igui_diwako_dui_compass_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_compass_w", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_h", nil];
-        profileNamespace setVariable ["igui_diwako_dui_namelist_w", nil];
     }
 ] call CBA_Settings_fnc_init;
 
